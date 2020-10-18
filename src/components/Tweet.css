@@ -1,0 +1,42 @@
+.tweets{
+    border-radius: 8px;
+    border-style: solid;
+    border-color: black;
+    background-color: #EFEFEF;
+    height: 30vh;
+    width: 30vw;
+    display: flex;
+    margin-bottom: 5%;
+  }
+  
+  .tweets:hover {
+    background: rgba(73, 75, 73, 0.3);
+  }
+  
+  .tweets:activate {
+    background: rgba(73, 75, 73, 0.3);
+    transform: translateY(4px);
+  }
+
+  .photo{
+    align-self: flex-start;
+    height: 35%;
+    width: 25%;
+    margin-top: 3%;
+  }
+
+  .username{
+    font-size: 175%;
+    color: black;
+    align-self: left;
+    padding: 0.05%;
+    margin-top: 2%;
+  }
+
+  .replying{
+    height: auto;
+    font-size: 100%;
+    color: black;
+    align-self: left;
+    padding: 0.2%;
+  }
