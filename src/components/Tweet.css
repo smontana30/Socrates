@@ -6,6 +6,7 @@
     height: 30vh;
     width: 30vw;
     display: flex;
+    flex-direction: column;
     margin-bottom: 5%;
   }
   
@@ -20,23 +21,45 @@
 
   .photo{
     align-self: flex-start;
-    height: 35%;
-    width: 25%;
-    margin-top: 3%;
+    flex: .4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .username{
     font-size: 175%;
     color: black;
-    align-self: left;
-    padding: 0.05%;
-    margin-top: 2%;
+    text-align: start;
   }
 
   .replying{
     height: auto;
     font-size: 100%;
     color: black;
+    text-align: start;
     align-self: left;
-    padding: 0.2%;
   }
+
+  .icon-container {
+    flex: .6;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10; 
+  }
+
+  .message{ 
+    display: flex;
+    flex: 1; 
+    padding-top: 25px;
+    text-align: start; 
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+
+ .smileyIcon{
+    padding-bottom: 5px;
+    padding-right: 15px;
+    text-align: right;  
+    flex: .15;
+ }
