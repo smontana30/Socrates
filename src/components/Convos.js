@@ -14,29 +14,43 @@ class Convos extends React.Component {
 			dataChunks.push(data.slice(i,i+chunk));
 		}
 
-		this.state = {data: dataChunks}
+		this.state = {data: dataChunks, selectedTweet: dataChunks[0][0]}
 	}
 
 	componentDidMount() {
 		this.props.socket.on("new-tweets", tweets => console.log("here"))
 	}
 
+	changeSelectedTweet(tweet) {
+		this.setState({selectedTweet: tweet})
+	}
+
 	render() {
 		console.log(this.state.data)
 		return (
-			<div className = "tweetBoxes">
-				{
-					this.state.data.map(arr => (
-						<div className= 'tweetBoxRow'>
-							{
-								arr.map(data => (
-									<Tweet data = {data}/>
-								))
+			<div>
+				{ this.state.selectedTweet ? 
+				(
+					<ConvNetwork onPress = {() => this.changeSelectedTweet(null)}  data = {this.state.selectedTweet}/>
 
-							}
-            			</div> 
-					))
-				}
+				)
+				:
+				(
+					<div className = "tweetBoxes">
+						{
+							this.state.data.map(arr => (
+								<div className= 'tweetBoxRow'>
+									{
+										arr.map(data => (
+											<Tweet data = {data} onPress = {(tweet) => this.changeSelectedTweet(tweet)} />
+										))
+		
+									}
+								</div> 
+							))
+						}
+					</div>
+				)}
 			</div>
 		)
 	}

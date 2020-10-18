@@ -17,7 +17,7 @@ class Tweet extends React.Component {
         } = this.props.data
 
         return (
-            <div className= "tweets">
+            <div className= "tweets" onClick = {() => this.props.onPress(this.props.data)}>
                 
                 <div style = {{display: "flex", alignItems: "center", flex: .2}}>
                     <div className= 'photo'> 
