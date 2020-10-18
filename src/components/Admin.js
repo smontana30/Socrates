@@ -9,9 +9,25 @@ class Admin extends React.Component {
         super();
         this.state = {
             show: false,
+            sheets: ''
         }
     }
 
+    // async componentDidMount() {
+    //     let resp= ''
+    //     axios.get('http://127.0.0.1:5000/get')
+    //     .then(response => this.setState({ sheets: response.data }))
+    //     .catch((err) => console.log(err));
+    //     console.log(this.state.sheets);
+
+    //     fetch('http://127.0.0.1:5000/post')
+    //     .then(res => resp = res)
+    //     .catch((err) => console.log(err));
+
+    //     console.log("sooooo");
+    //     console.log(resp);
+    //     this.setState({sheets: resp})
+    // }
 
     render() {
         return (

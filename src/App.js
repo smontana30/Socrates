@@ -22,6 +22,11 @@ function App() {
           <img src = { GreekCrown } />
       </div>
 
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+
       <Tabs
         id="tabs"
         activeKey={key}

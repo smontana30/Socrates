@@ -7,7 +7,8 @@ class SocrateForm extends React.Component {
     constructor() {
         super()
         this.state = {
-            question: ''
+            question: '',
+            sheets: '',
         }
     }
 
@@ -21,30 +22,28 @@ class SocrateForm extends React.Component {
         const socrates = {
             question: this.state.question
         };
-
-
         // axios.request.append('Access-Control-Allow-Origin', 'http://localhost:3000');
-
-        axios.post('http://127.0.0.1:5000/post', {socrates})
+        axios.post('http://127.0.0.1:5000/post', socrates, {headers: {'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, PATCH, OPTIONS'}})
         .then(res => {
             console.log(res);
             console.log(res.data);
         })
-        .catch(() => console.log("Can’t access response. Blocked by browser?"))
+        .catch((error) => console.log(error))
+        
     }
 
     render() {
         return (
             <div>
-                <Form onSubmit={this.handleSubmit}>
+                <Form method="get" onSubmit={this.handleSubmit}>
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label>Enter Question you would like Socrates to ask?</Form.Label>
-                        <Form.Control onChange={this.updateQuestion} type="text" placeholder="Enter question" />
+                        <Form.Control name="question" onChange={this.updateQuestion} type="text" placeholder="Enter question" />
                         <Form.Text className="text-muted">
                         Type a question you would Socrates to ask.
                         </Form.Text>
                     </Form.Group>
-                    <Button variant="outline-secondary" type="submit">
+                    <Button  variant="outline-secondary" type="submit">
                             Submit
                     </Button>
                 </Form>
