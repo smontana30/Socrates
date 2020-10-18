@@ -1,83 +1,56 @@
 [
 	{
-		"username": "socrates",
-		"replying": ["cris737", "steven737"],
-		"message": "That is true unaffected or engineered beauty. Thank you for sharing it. I'm very envious of being able to see this in person",
+		"username": "SocratesBot",
+		"replying": ["@csepulveda3211"],
+		"message": "What's been your happiest memory this past year?",
 		"photo": "https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-featured.png",
-		"numberOfUsers": 20,
-		"numberOfTweets": 20,
+		"numberOfUsers": 4,
+		"numberOfTweets": 4,
 		"sentiment": 1
 	},
 	{
-		"username": "socrates",
-		"replying": ["cris737", "steven737"],
-		"message": "That is true unaffected or engineered beauty. Thank you for sharing it. I'm very envious of being able to see this in person",
+		"username": "SocratesBot",
+		"replying": ["@whitneystuckey"],
+		"message": "Do you think the image you have of yourself matches the image other people see you as?",
 		"photo": "https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-featured.png",
-		"numberOfUsers": 20,
-		"numberOfTweets": 20,
+		"numberOfUsers": 0,
+		"numberOfTweets": 0,
 		"sentiment": 1
 	},
 	{
-		"username": "socrates",
-		"replying": ["cris737", "steven737"],
-		"message": "That is true unaffected or engineered beauty. Thank you for sharing it. I'm very envious of being able to see this in person",
+		"username": "SocratesBot",
+		"replying": ["@smontana30"],
+		"message": "Are you missing anyone right now? Do you think they miss you to?",
 		"photo": "https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-featured.png",
-		"numberOfUsers": 20,
-		"numberOfTweets": 20,
+		"numberOfUsers": 0,
+		"numberOfTweets": 0,
 		"sentiment": 1
 	},
 	{
-		"username": "socrates",
-		"replying": ["cris737", "steven737"],
-		"message": "That is true unaffected or engineered beauty. Thank you for sharing it. I'm very envious of being able to see this in person",
+		"username": "SocratesBot",
+		"replying": ["@cris737"],
+		"message": "Has a stranger ever changed your life?",
 		"photo": "https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-featured.png",
-		"numberOfUsers": 20,
-		"numberOfTweets": 20,
+		"numberOfUsers": 0,
+		"numberOfTweets": 0,
 		"sentiment": 1
 	},
 	{
-		"username": "socrates",
-		"replying": ["cris737", "steven737"],
-		"message": "That is true unaffected or engineered beauty. Thank you for sharing it. I'm very envious of being able to see this in person",
+		"username": "SocratesBot",
+		"replying": ["@StevenP737"],
+		"message": "If you could get to know someone in your life on a deeper level who would it be and why?",
 		"photo": "https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-featured.png",
-		"numberOfUsers": 20,
-		"numberOfTweets": 20,
+		"numberOfUsers": 0,
+		"numberOfTweets": 0,
 		"sentiment": 1
 	},
 	{
-		"username": "socrates",
-		"replying": ["cris737", "steven737"],
-		"message": "That is true unaffected or engineered beauty. Thank you for sharing it. I'm very envious of being able to see this in person",
+		"username": "SocratesBot",
+		"replying": ["@estebanmjb7"],
+		"message": "What has been your earliest recollection of happiness?",
 		"photo": "https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-featured.png",
-		"numberOfUsers": 20,
-		"numberOfTweets": 20,
-		"sentiment": 1
-	},
-	{
-		"username": "socrates",
-		"replying": ["cris737", "steven737"],
-		"message": "That is true unaffected or engineered beauty. Thank you for sharing it. I'm very envious of being able to see this in person",
-		"photo": "https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-featured.png",
-		"numberOfUsers": 20,
-		"numberOfTweets": 20,
-		"sentiment": 1
-	},
-	{
-		"username": "socrates",
-		"replying": ["cris737", "steven737"],
-		"message": "That is true unaffected or engineered beauty. Thank you for sharing it. I'm very envious of being able to see this in person",
-		"photo": "https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-featured.png",
-		"numberOfUsers": 20,
-		"numberOfTweets": 20,
-		"sentiment": 1
-	},
-	{
-		"username": "socrates",
-		"replying": ["cris737", "steven737"],
-		"message": "That is true unaffected or engineered beauty. Thank you for sharing it. I'm very envious of being able to see this in person",
-		"photo": "https://www.creativefreedom.co.uk/wp-content/uploads/2017/06/Twitter-featured.png",
-		"numberOfUsers": 20,
-		"numberOfTweets": 20,
+		"numberOfUsers": 0,
+		"numberOfTweets": 0,
 		"sentiment": 1
 	}
 ]

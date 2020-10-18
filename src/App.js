@@ -7,12 +7,12 @@ import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import TabContent from 'react-bootstrap/TabContent';
 import  Convos from './components/Convos';
-import Stats from './components/Stats';
+import Socrates from './components/Socrates';
 import io from "socket.io-client";
+// const socket = io("http://127.0.0.1:5000/")
 
 function App() {
   const [key, setKey] = useState('convos');
-  const socket = io("http://127.0.0.1:5000/")
 
   return (
     <div className= 'App'>
@@ -24,24 +24,19 @@ function App() {
           <img src = { GreekCrown } />
       </div>
 
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-
       <Tabs
         id="tabs"
         activeKey={key}
         onSelect={(k) => setKey(k)}
       >
+        <Tab eventKey="" title="Who Am I">
+          <Socrates />
+        </Tab>
         <Tab eventKey="admin" title="Admin">
           <Admin/>
         </Tab>
         <Tab eventKey="convos" title="Convos">
-          <Convos socket = {socket}/>
-        </Tab>
-        <Tab eventKey="statics" title="Metrics">
-          <Stats />
+          <Convos />
         </Tab>
       </Tabs>
     </div>

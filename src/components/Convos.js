@@ -14,11 +14,11 @@ class Convos extends React.Component {
 			dataChunks.push(data.slice(i,i+chunk));
 		}
 
-		this.state = {data: dataChunks, selectedTweet: dataChunks[0][0]}
+		this.state = {data: dataChunks, selectedTweet: null}
 	}
 
 	componentDidMount() {
-		this.props.socket.on("new-tweets", tweets => console.log("here"))
+		//this.props.socket.on("new-tweets", tweets => console.log("here"))
 	}
 
 	changeSelectedTweet(tweet) {
@@ -37,6 +37,10 @@ class Convos extends React.Component {
 				:
 				(
 					<div className = "tweetBoxes">
+						<div style = {{display: "flex", flexDirection: "column", width: "100vw", paddingTop: "5%", alignItems: "center"}}>
+							Tweet of the Day
+							<Tweet style = {{marginBottom: 0}}data = {data}/>
+						</div>
 						{
 							this.state.data.map(arr => (
 								<div className= 'tweetBoxRow'>

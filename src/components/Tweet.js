@@ -13,6 +13,7 @@ class Tweet extends React.Component {
             photo,
             numberOfUsers,
             numberOfTweets,
+            tweetOfTheDay,
             sentiment
         } = this.props.data
 
@@ -25,7 +26,7 @@ class Tweet extends React.Component {
                     </div>
                     <div style = {{flex: .8}}>
                         <div className= 'username'> {username} </div>
-                        <div className= 'replying'> {replying} </div>
+                        {!tweetOfTheDay && <div className= 'replying'> Replying to {replying} </div> }
                     </div>
                     <div className= 'icon-container' style ={{paddingRight: 15}}> 
                         {numberOfTweets}

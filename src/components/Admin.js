@@ -1,38 +1,35 @@
 import React, {Component} from 'react';
 import SocrateForm from './SocrateForm';
+import List from './SocratesList';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 class Admin extends React.Component {
     constructor(){
         super();
         this.state = {
             show: false,
-            sheets: ''
+            sheets: []
         }
     }
 
-    // async componentDidMount() {
-    //     let resp= ''
-    //     axios.get('http://127.0.0.1:5000/get')
-    //     .then(response => this.setState({ sheets: response.data }))
-    //     .catch((err) => console.log(err));
-    //     console.log(this.state.sheets);
-
-    //     fetch('http://127.0.0.1:5000/post')
-    //     .then(res => resp = res)
-    //     .catch((err) => console.log(err));
-
-    //     console.log("sooooo");
-    //     console.log(resp);
-    //     this.setState({sheets: resp})
-    // }
+    async componentDidMount() {
+        let resp= []
+        await axios.get('http://127.0.0.1:5000/get')
+        .then(response => resp = response.data)
+        .catch((err) => console.log(err));
+        await resp.shift();
+        await this.setState({sheets: resp});
+    }
 
     render() {
         return (
             <div>
-                <h1>What Question would you like Socrates to ask?</h1>
+                <h1>What questions would you like Socrates to ask?</h1>
+                <br></br>
+
                 <Modal
                     size="lg"
                     show={this.state.show}
@@ -52,9 +49,15 @@ class Admin extends React.Component {
                 <div></div>
 
                 <br></br>
+                <br></br>
 
                 <h2>Questions Socrates can ask you?</h2>
-                <div></div>
+                <ListGroup>
+                   {this.state.sheets.map((tweet) => (
+                    <ListGroup.Item>{tweet}</ListGroup.Item>
+                    ))} 
+                </ListGroup>
+                
             </div>
         );
     }

@@ -29,7 +29,6 @@ class SocrateForm extends React.Component {
             console.log(res.data);
         })
         .catch((error) => console.log(error))
-        
     }
 
     render() {
