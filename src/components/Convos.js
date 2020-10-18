@@ -17,6 +17,10 @@ class Convos extends React.Component {
 		this.state = {data: dataChunks}
 	}
 
+	componentDidMount() {
+		this.props.socket.on("new-tweets", tweets => console.log("here"))
+	}
+
 	render() {
 		console.log(this.state.data)
 		return (
