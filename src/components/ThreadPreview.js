@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {Component} from 'react';
 
-class ThreadPreview extends React {
+class ThreadPreview extends React.Component {
     render() {
         return (
             <div></div>
